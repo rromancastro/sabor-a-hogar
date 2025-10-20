@@ -1,0 +1,54 @@
+// sass --watch app/sass/styles.scss app/globals.css
+
+@use './components/navbar';
+@use './components/footer';
+@use './components/productCard';
+@use './components/productsList';
+@use './components/loader';
+@use './sections/iniciarSesionSection';
+@use './sections/panelAdministradorSection';
+@use './sections/productDetail';
+@use './sections/cartSection';
+@use './sections/productsByCategory';
+
+
+//fonts
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf');
+    font-weight: 600;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-color: #fdeaf2;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, input, label, select, textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1;
+}

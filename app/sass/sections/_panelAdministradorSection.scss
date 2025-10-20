@@ -1,0 +1,69 @@
+#panelAdministradorSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15vh 0;
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+}
+
+#inputImagenes {
+    padding: 0;
+    width: 240px;
+}
+
+#inputImagenes::file-selector-button {
+    background-color: #FFFCFE;
+    color: #8B7775;
+    font-family: "Inter";
+    width: 240px;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.seleccionarCategoria {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    gap: 4px;
+    #categoriaSelect {
+        outline: none;
+        border: none;
+        width: 240px;
+        height: 40px;
+        padding: 0 8px;
+        border-radius: 8px;
+        background-color: #FFFCFE;
+        margin-bottom: 16px;
+        font-weight: 400;
+        color: #8B7775;
+    }
+}
+
+#inputImagenes::file-selector-button:hover {
+    background-color: #F7C3D2;
+    color: #ffffff;
+}
+
+#panelAdministradorImagen {
+    padding: 20px;
+    background-color: #fafafa;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+#editarProductosSectionTitle {
+    margin-top: 40px;
+}
