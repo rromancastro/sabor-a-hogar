@@ -9,7 +9,7 @@ export default function Cart() {
 
     const {cartItems, quantityItems, plusOneToCart, minusOneToCart, removeFromCart, clearCart, totalPrice} = useCart();
 
-    const whatsappNumber = "5492664205013";
+    const whatsappNumber = "5492664749903";
 
     const generateMessage = () => {
         let message = "Hola! Quisiera hacer un pedido:%0A";
