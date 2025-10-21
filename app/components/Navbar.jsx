@@ -26,7 +26,7 @@ export const Navbar = () => {
             <IoIosArrowDown style={{rotate: dropOpen ? '180deg' : '0deg', transition: '.3s'}} onClick={() => setDropOpen(!dropOpen)} className="navCartContainerIcon" />
         </div>
     </nav>
-        <div id="navDropDown" style={{opacity: dropOpen ? '1' : '0', transform: dropOpen ? 'translateY(0)' : 'translateY(-10.1vh)'}}>
+        <div id="navDropDown" style={{opacity: dropOpen ? '1' : '0', top: dropOpen ? '9vh' : '0vh' }}>
             <Link href="/products/postres">POSTRES</Link>
             <Link href="/products/helados">HELADOS</Link>
             <Link href="/products/facturas">FACTURAS</Link>
