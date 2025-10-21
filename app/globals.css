@@ -455,7 +455,7 @@ footer a {
   display: grid;
   align-items: center;
   grid-template-columns: 40% 25% 25% 10%;
-  border-bottom: 1px solid #FBD5E5;
+  border-top: 1px solid #FBD5E5;
 }
 
 .cartContentProductImage {
@@ -548,6 +548,7 @@ footer a {
     flex-direction: column;
     align-items: center;
     padding: 10vh 5vw;
+    padding-top: 15vh;
   }
 }
 @media (max-width: 722px) {
@@ -582,45 +583,6 @@ footer a {
   }
   .precioTotal {
     font-size: 12px;
-  }
-  #orderSummary {
-    border: 1px solid #FBD5E5;
-    height: 100%;
-    width: 300px;
-    padding: 16px;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-  }
-  #orderSummary h2 {
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  #orderSummary p {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  #orderSummary p span {
-    font-weight: 600;
-  }
-  #orderSummary a {
-    text-decoration: none;
-    background-color: rgb(69, 179, 69);
-    border: none;
-    color: #fafafa;
-    padding: 12px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  #orderSummary a:hover {
-    background-color: rgb(38, 124, 38);
   }
 }
 #productsByCategorySection {
