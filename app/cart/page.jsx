@@ -47,7 +47,7 @@ export default function Cart() {
                                         <p>{item.quantity}</p>
                                         <FaPlus onClick={() => plusOneToCart(item.id)} className="cartContentProductCantidadIcon" />
                                     </div>
-                                    <p>${item.precio * item.quantity}</p>
+                                    <p className="precioTotal">${item.precio * item.quantity}</p>
                                     <FaTrash className="cartEliminarItem" onClick={() => removeFromCart(item.id)} />
                                 </article>
                             })

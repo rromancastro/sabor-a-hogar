@@ -183,6 +183,9 @@ footer a {
 }
 
 @media (max-width: 450px) {
+  .productCard {
+    height: 430px;
+  }
   .productCardImage {
     height: 200px;
   }
@@ -456,17 +459,17 @@ footer a {
 }
 
 .cartContentProductImage {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
 .cartContentProductImageContainer {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
   gap: 8px;
-  padding: 16px;
+  padding: 12px;
   align-items: center;
 }
 .cartContentProductImageContainer p {
@@ -540,6 +543,86 @@ footer a {
   background-color: rgb(38, 124, 38);
 }
 
+@media (max-width: 1054px) {
+  #cartSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 5vw;
+  }
+}
+@media (max-width: 722px) {
+  #cartContentProducts {
+    width: 100%;
+  }
+  #cartContentProductsTableInfo {
+    grid-template-columns: 50% 20% 20% 10%;
+  }
+  #cartContentProductsTableInfo p {
+    font-size: 12px;
+  }
+  .cartContentProduct {
+    grid-template-columns: 50% 20% 20% 10%;
+  }
+  .cartContentProductImageContainer {
+    gap: 16px;
+  }
+  .cartContentProductImageContainer p {
+    font-size: 12px;
+    width: 80%;
+  }
+  .cartContentProductCantidad {
+    gap: 6px;
+    width: 60px;
+  }
+  .cartContentProductCantidad p {
+    font-size: 12px;
+  }
+  .cartContentProductCantidadIcon {
+    font-size: 10px;
+  }
+  .precioTotal {
+    font-size: 12px;
+  }
+  #orderSummary {
+    border: 1px solid #FBD5E5;
+    height: 100%;
+    width: 300px;
+    padding: 16px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  #orderSummary h2 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  #orderSummary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  #orderSummary p span {
+    font-weight: 600;
+  }
+  #orderSummary a {
+    text-decoration: none;
+    background-color: rgb(69, 179, 69);
+    border: none;
+    color: #fafafa;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #orderSummary a:hover {
+    background-color: rgb(38, 124, 38);
+  }
+}
 #productsByCategorySection {
   height: 100%;
   min-height: 100vh;
