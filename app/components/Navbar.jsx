@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     const [dropOpen, setDropOpen] = useState(false);
 
-    return <nav style={{borderRadius: dropOpen ? '24px 24px 0 0' : '24px'}}>
+    return <><nav style={{borderRadius: dropOpen ? '24px 24px 0 0' : '24px'}}>
         <Image onClick={() => router.push("/")} id="navLogo" src="/logo.png" alt="marian" width={50} height={50} />
         <div id="navUtilities">
             <div onClick={() => router.push("/cart")} id="navCartContainer">
@@ -25,10 +25,11 @@ export const Navbar = () => {
             <FaCircleUser onClick={() => router.push("/admin")} className="navCartContainerIcon" />
             <IoIosArrowDown style={{rotate: dropOpen ? '180deg' : '0deg', transition: '.3s'}} onClick={() => setDropOpen(!dropOpen)} className="navCartContainerIcon" />
         </div>
-        <div id="navDropDown" style={{top: dropOpen ? '10vh' : '2vh', opacity: dropOpen ? '1' : '0'}}>
+    </nav>
+        <div id="navDropDown" style={{opacity: dropOpen ? '1' : '0', transform: dropOpen ? 'translateY(0)' : 'translateY(-10.1vh)'}}>
             <Link href="/products/postres">POSTRES</Link>
             <Link href="/products/helados">HELADOS</Link>
             <Link href="/products/facturas">FACTURAS</Link>
         </div>
-    </nav>
+    </> 
 }

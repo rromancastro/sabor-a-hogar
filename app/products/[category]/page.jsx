@@ -18,7 +18,7 @@ export default function ProductsCategory({params}) {
 
     return <section id="productsByCategorySection">
         <Navbar />
-        {products.length === 0 ? <div id="productsByCategorySectionError"><h1>No hay productos</h1></div> : <ProductsList products={products} />}
+        {products.length === 0 ? <div id="productsByCategorySectionError"><h1>No hay productos</h1></div> : <ProductsList titulo={category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()} products={products} />}
         <Footer />
     </section>
 }

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Footer, Navbar, ProductsList} from "./components";
+import { Navbar, ProductsList} from "./components";
 import { getAllProducts } from "./firebase/getAllProducts";
 
 export default function Home() {
@@ -17,7 +17,6 @@ export default function Home() {
 
   return (<>
     <Navbar />
-    <ProductsList products={products} />
-    <Footer />
+    <ProductsList products={products} titulo={"Todos los productos"} />
   </>)
 }
