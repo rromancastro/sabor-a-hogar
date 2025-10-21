@@ -208,7 +208,7 @@ export const PanelAdministrador = () => {
         <button onClick={handleSubmit} id="iniciarSesionButton">Subir producto</button>
 
         <h2 id="editarProductosSectionTitle">Editar productos</h2>
-        {productSelected === null ? <section id="productsList">
+        {productSelected === null ? <section style={{padding: '4vw'}} id="productsList">
             {
                 products.map((product) => {
                     return <article key={product.id} className="cardProductoEditar">
