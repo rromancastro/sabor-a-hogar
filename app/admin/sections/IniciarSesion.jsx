@@ -46,30 +46,31 @@ export const IniciarSesion = ({setSesionIniciada}) => {
     }
 
     return <section id="iniciarSesionSection">
-        <h1>Panel de administrador</h1>
-        <h2>Iniciar sesión</h2>
-        <div className="inputContainer">
-            <label htmlFor="userInput">Usuario</label>
-            <input id="userInput" type="text" placeholder="Usuario" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div className="inputContainer">
-            <label htmlFor="passwordInput">Contraseña</label>
-            <input id="passwordInput" type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button id="iniciarSesionButton" onClick={handleSubmit}>Iniciar sesión</button>
-
-        <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick={false}
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="colored"
-            transition={Bounce}
-        />
+        <section id="iniciarSesionSectionContent">
+            <h1>Panel de administrador</h1>
+            <h2>Iniciar sesión</h2>
+            <div className="inputContainer">
+                <label htmlFor="userInput">Usuario</label>
+                <input id="userInput" type="text" placeholder="Usuario" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div className="inputContainer">
+                <label htmlFor="passwordInput">Contraseña</label>
+                <input id="passwordInput" type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <button id="iniciarSesionButton" onClick={handleSubmit}>Iniciar sesión</button>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition={Bounce}
+            />
+        </section>
     </section>
 }
