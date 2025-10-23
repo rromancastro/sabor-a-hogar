@@ -217,10 +217,15 @@ footer a {
   align-items: center;
   padding: 15vh 4vw;
   gap: 24px;
+  overflow-x: hidden;
 }
 #productsListContainer h1 {
   font-size: 32px;
   color: #44132A;
+  background-color: #fdeaf2;
+  width: 100vw;
+  padding: 16px;
+  text-align: center;
 }
 
 #productsList {
@@ -269,24 +274,15 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-#iniciarSesionSectionContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #fdeaf2;
-  padding: 64px;
-  border-radius: 24px;
+  align-items: center;
 }
-#iniciarSesionSectionContent h1 {
+#iniciarSesionSection h1 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-#iniciarSesionSectionContent h2 {
+#iniciarSesionSection h2 {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 24px;

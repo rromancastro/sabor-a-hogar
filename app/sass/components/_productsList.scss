@@ -7,9 +7,14 @@
     align-items: center;
     padding: 15vh 4vw;
     gap: 24px;
+    overflow-x: hidden;
     h1 {
         font-size: 32px;
         color: #44132A;
+        background-color: #fdeaf2;
+        width: 100vw;
+        padding: 16px;
+        text-align: center;
     }
 }
 
