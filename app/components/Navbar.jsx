@@ -16,7 +16,7 @@ export const Navbar = () => {
     const [dropOpen, setDropOpen] = useState(false);
 
     return <><nav style={{borderRadius: dropOpen ? '24px 24px 0 0' : '24px'}}>
-        <Image onClick={() => router.push("/")} id="navLogo" src="/logo.png" alt="marian" width={50} height={50} />
+        <Image onClick={() => router.push("/")} id="navLogo" src="/logo.png" alt="marian" width={100} height={100} />
         <div id="navUtilities">
             <div onClick={() => router.push("/cart")} id="navCartContainer">
                 <FaCartShopping className="navCartContainerIcon" />
